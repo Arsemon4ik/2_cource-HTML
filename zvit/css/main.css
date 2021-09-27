@@ -1,8 +1,8 @@
 /* .wrapper{
   padding: 40px;
 } */
-body{
-  margin: 50px;
+body{ /* Селектор */
+  margin: 50px; /*CSS-свойство и значение */
   font-size: 30px;
   background-color: antiquewhite;
   text-align: center;
@@ -28,13 +28,26 @@ img{
   display:center;
   padding:20px;
   font-size: 20px;
+  text-decoration: none;
+
 }
+
+.labs button a:hover{
+  /*Чтобы ничего не слиплось*/
+  display:center;
+  padding:20px;
+  font-size: 20px;
+  text-decoration: underline;
+
+}
+
+
 .labs button{
   padding:10px;
   border-radius: 10px;
 }
 .labs{
-text-align: center;
+  text-align: center;
 }
 
 table a{
@@ -58,6 +71,12 @@ table button{
   align-items: baseline;
   text-align: left;
 }
+.container_2 button a {
+  text-decoration: none;
+}
+.container_2 button a:hover {
+  text-decoration: underline;
+}
 .under_container{
   display: inline;
   padding-left: 50px;
@@ -73,4 +92,28 @@ table button{
 
 .opis-main th{
   text-align: center;
+}
+
+#container_ex {
+  display: flex;
+  text-align: left;
+  justify-content: flex-start;
+  align-items: baseline;
+}
+
+.plav_img{
+  float: left; /* Выравнивание рисунка по левому краю */
+  width: 59%;
+  height: 60%;
+  border-radius: 0;
+  margin: 0;
+
+}
+
+.opis-main_2 B + I {
+  color: red;
+}
+
+p, b {
+  font-family: fantasy;
 }
