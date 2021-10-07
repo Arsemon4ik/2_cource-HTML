@@ -1,0 +1,102 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.logoInfo{
+    display: flex;
+    background-color: #eeee;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+header{
+    background-color: #eeee;
+}
+
+.pic_text{
+    display: flex;
+    align-items: center;
+
+}
+
+.img_text{
+    padding-top: 10px;
+}
+
+.big_text{
+    font-size: 20px;
+    font-weight: 800;
+    color: #30A4D9;
+}
+
+.small_text{
+    font-size: 14px;
+    font-weight: 600;
+    color: #000285;
+}
+
+
+/* Кнопки меню*/
+
+.menubut{
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffff;
+}
+
+.menubut a{
+    font-size: 18px;
+    font-weight: 550;
+    color: #ffff;
+    text-decoration: none;
+}
+
+.menubut #but, #but1, #but7{
+    background-color: #40AEDB;
+    padding: 20px 50px;
+    border: 0;
+}
+
+.menubut #but1{
+    margin-left: 5px;
+    text-align: right;
+
+}
+
+.menubut #but1 a{
+    padding-left: 30px;
+
+}
+
+.menubut #but7 a{
+    padding-right: 30px;
+
+}
+
+.blocks{
+    display: flex;
+    padding: 20px 0 0 3px;
+    width: 100%;
+}
+
+.blocks img{
+    width: 40px;
+}
+
+#block1 {
+    background-color: #319ED3;
+}
+#block2 {
+    background-color: #F89E00;
+}
+#block3 {
+    background-color: #CB3536;
+}
+
+.flexim{
+    display: flex;
+}
+
+
