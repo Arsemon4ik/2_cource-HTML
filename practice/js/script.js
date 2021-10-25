@@ -16,9 +16,24 @@
 // setTimeout(setScroll,1000);
 
 
-const item = document.querySelector('.lesson__block')
+const but = document.getElementsByClassName('sub')
+const search = document.getElementsByClassName('search');
 
-const getCoordFirstButton = item.getBoundingClientRect();
+console.log(search);
+console.log(but);
 
-console.log(getCoordFirstButton);
+document.addEventListener('mouseover', button);
+
+function button(event){
+    {
+        if (event.target.closest('.sub')) {
+            search.style.display = 'block';
+
+        }
+        if (!event.target.closest('.sub')) {
+            search.classList.remove('.search');
+        }
+
+    }
+}
 
