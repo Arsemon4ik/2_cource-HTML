@@ -163,7 +163,7 @@ nav img{
 .text{
     padding: 20px 0px 0px 12px;
     border:0;
-    background-color: #fff;
+    background-color: #ffff;
     font-size: 21px;
     width: 72%;
     text-transform: uppercase;
@@ -172,7 +172,7 @@ nav img{
     text-align: left;
 }
 
-.img{
+.lypa_img{
     width: 11.5%;
     padding: 0 0 0 0;
 }

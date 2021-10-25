@@ -1,0 +1,24 @@
+.wrapper button:first-child{
+    border: 10px solid black;
+    border-radius: 20px;
+}
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+
+button a{
+    font-size: 40px;
+    text-decoration: none;
+}
+
+body{
+    background-color: beige;
+}
+
+p{
+    display: none;
+
+    font-size: 20px;
+}
