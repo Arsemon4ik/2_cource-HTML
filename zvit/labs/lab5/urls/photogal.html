@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href = "../css/zvit.css">
+        <title>Опис галузі</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="header-block">
+                <p><strong>ЗВІТИ З ЛАБОРАТОРНИХ РОБІТ</strong></p>
+                <p><strong>З ДИСЦИПЛІНИ ІНТЕРНЕТ-ТЕХНОЛОГІЇ ТА ПРОЕКТУВАННЯ WEB-ЗАСТОСУВАНЬ</strong></p>
+            </div class="header-block">
+            <div class="img">
+                <img src="../img/arseniy.JPG">
+                <img src="../img/ura.jpg">
+            </div class="img">
+        </div class="container">
+        <div class="labs">
+            <button> <a href="../../../index.html"> Лабораторна №1</a> </button>
+            <button> <a href="../../lab2/lab2.html"> Лабораторна №2</a></button>
+            <button> <a href="../../lab3/lab3.html"> Лабораторна №3</a> </button>
+            <button> <a href="../../lab4/lab4.html"> Лабораторна №4</a></button>
+            <button> <a href="../../lab5/lab5.html"> Лабораторна №5</a> </button>
+            <button> <a href="labs/lab6.html"> Лабораторна №6</a></button>
+            <button> <a href="labs/lab7.html"> Лабораторна №7</a> </button>
+            <button> <a href="labs/lab8.html"> Лабораторна №8</a></button>
+        </div class="labs">
+        <div class="container_2">
+            <div class="main-table">
+                <table>
+                    <tr>
+                        <td>
+                            <button> <a href="../urls/tema.html"> Постановка задачи <br> Лабораторнои роботи №5</a> </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button> <a href="../urls/din_elemens.html"> Динамични елементи <br> 3 пункту </a> </button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <button> <a href="../urls/UniteGal.html"> Галерея <br> UniteGallery </a> </button>
+                        </td>
+                    </tr>
+
+                </table>
+                <div class ="addition-table">
+                    <table>
+                        <tr>
+                            <td>
+                                <button> <a href="../urls/photogal.html"> Фотогаларея</a> </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <button> <a href="../urls/sliderPhoto.html"> Слайдер фотографий</a> </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <button> <a href="../urls/sliderVideo.html"> Слайдер видеоматериалов </a> </button>
+                            </td>
+                        </tr>
+                    </table>
+                </div class ="addition-table">
+                <table>
+                    <tr>
+                        <td>
+                            <button> <a href="../urls/buttons.html">Кнопки соц.мереж </a> </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button> <a href="../urls/infonomer.html"> Информери </a> </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button> <a href="../urls/visnovki.html"> ВИСНОВКИ </a> </button>
+                        </td>
+                    </tr>
+                </table>
+            </div class ="main-table">
+
+
+            <div class="under_container">
+                <div class="opis-header">
+                    <p style="color: rgb(16, 29, 207); font-size: 30px;">Фотогалерея</p>
+                </div>
+                <div class="opis-main">
+                    <table frame="border">
+
+                        <tr>
+                            <th>
+                                Код HTML
+                            </th>
+                            <th>
+                                Код JS
+                            </th>
+                            <th>
+                                Фото
+                            </th>
+                        </tr>
+
+
+                        <tr>
+                            <td>
+                                <code>
+                                        &lt;head&gt;<br/>        &lt;meta charset=&quot;UTF-8&quot;&gt;<br/>        &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;<br/>        &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;<br/>        &lt;link href=&quot;../unitegallery/css/unite-gallery.css&quot; rel=&quot;stylesheet&quot;&gt;<br/>        &lt;link href=&quot;../unitegallery/themes/default/ug-theme-default.css&quot; rel=&quot;stylesheet&quot;&gt;<br/>        &lt;link  href=&quot;../unitegallery/themes/video/skin-right-no-thumb.css&quot; rel=&quot;stylesheet&quot; type=&#39;text/css&#39;&gt;<br/><br/>        &lt;link  href=&quot;../unitegallery/themes/video/skin-right-thumb.css&quot; rel=&quot;stylesheet&quot; type=&#39;text/css&#39;&gt;<br/><br/>        &lt;link  href=&quot;../unitegallery/themes/video/skin-right-title-only.css&quot; rel=&quot;stylesheet&quot; type=&#39;text/css&#39;&gt;<br/>        &lt;title&gt;Завдання 3&lt;/title&gt;<br/>&lt;/head&gt;<br/>&lt;body&gt;<br/>        &lt;h1&gt;Фотогалерея з можливістю перегляду збільшених зображень&lt;/h1&gt;<br/>        &lt;div id=&quot;galleryTiles&quot; style=&quot;display:none;&quot;&gt;<br/><br/>                &lt;img alt=&quot;Image 1 Title&quot; src=&quot;../img/1.jpg&quot;<br/><br/>                        data-image=&quot;../img/1.jpg&quot;<br/><br/>                        data-description=&quot;Image 1 Description&quot;&gt;<br/><br/><br/><br/>                &lt;img alt=&quot;Image 2 Title&quot; src=&quot;../img/2.jpg&quot;<br/><br/>                        data-image=&quot;../img/2.jpg&quot;<br/><br/>                        data-description=&quot;Image 2 Description&quot;&gt;<br/><br/><br/><br/>                &lt;img alt=&quot;Image 3 Title&quot; src=&quot;../img/3.jpg&quot;<br/><br/>                        data-image=&quot;../img/3.jpg&quot;<br/><br/>                        data-description=&quot;Image 3 Description&quot;&gt;<br/><br/><br/><br/>                &lt;img alt=&quot;Image 4 Title&quot; src=&quot;../img/4.jpg&quot;<br/><br/>                        data-image=&quot;../img/4.jpg&quot;<br/><br/>                        data-description=&quot;Image 4 Description&quot;&gt;<br/><br/><br/><br/>                &lt;img alt=&quot;Image 5 Title&quot; src=&quot;../img/5.jpg&quot;<br/><br/>                        data-image=&quot;../img/5.jpg&quot;<br/><br/>                        data-description=&quot;Image 5 Description&quot;&gt;<br/><br/><br/><br/>                &lt;img alt=&quot;Image 6 Title&quot; src=&quot;../img/6.jpg&quot;<br/><br/>                        data-image=&quot;../img/6.jpg&quot;<br/><br/>                        data-description=&quot;Image 6 Description&quot;&gt;<br/><br/><br/><br/>                &lt;img alt=&quot;Image 7 Title&quot; src=&quot;../img/7.jpg&quot;<br/><br/>                        data-image=&quot;../img/7.jpg&quot;<br/><br/>                        data-description=&quot;Image 7 Description&quot;&gt;<br/><br/>        &lt;/div&gt;<br/>        &lt;script src=&quot;../js/jquery.js&quot;&gt;&lt;/script&gt;<br/>        &lt;script src=&quot;../unitegallery/js/unitegallery.js&quot;&gt;&lt;/script&gt;<br/>        &lt;script src=&quot;../unitegallery/themes/tiles/ug-theme-tiles.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;<br/>        &lt;script src=&quot;../unitegallery/themes/slider/ug-theme-slider.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;<br/><br/>        &lt;script src=&quot;../unitegallery/themes/video/ug-theme-video.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;<br/>        &lt;script src=&quot;../js/ex_3_2.js&quot;&gt;&lt;/script&gt;
+                                </code>
+
+                            </td>
+                            <td>
+                                <code>
+                                        $("#galleryTiles").unitegallery({
+
+                                                gallery_theme: "tiles",
+
+
+                                        });
+                                </code>
+
+                            </td>
+                            <td>
+                                <img src="../img/photo_gal.png" alt="">
+
+
+                            </td>
+                        </tr>
+
+                    </table>
+                </div class="opis-main">
+
+            <div class="under_container"></div>
+
+
+    </body>
+</html>

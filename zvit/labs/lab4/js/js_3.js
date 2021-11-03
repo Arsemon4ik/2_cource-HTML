@@ -17,3 +17,4 @@ function mouse_out() {
     help.style.display = 'none';
 }
 
+parseFloat (101.2 USD)
