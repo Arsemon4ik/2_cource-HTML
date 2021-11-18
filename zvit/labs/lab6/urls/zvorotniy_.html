@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Форма обратной связи</title>
+</head>
+<body>
+    <p>PHP в процесе (еще не научился писать)</p>
+    <form action="../urls/mail.php" method="post" name="form" >
+        <input  name="name" type="text" placeholder="Ваше имя" />
+        <br>
+        <input name="email" type="text" placeholder="Ваша почта" />
+        <br>
+        <input size="30" name="header" type="text" placeholder="Тема" />
+        <br>
+        <textarea cols="32" name="message" rows="5"></textarea>
+        <br>
+        <input type="submit" value="Отправить" />
+    </form>
+</body>
+</html>
