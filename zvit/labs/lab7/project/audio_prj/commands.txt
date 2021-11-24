@@ -1,0 +1,15 @@
+from audiotek.models import Album, Artist, Song
+Album1 = Album.objects.create(title = "Middle")
+Album2 = Album.objects.create(title = "AM")
+Album3 = Album.objects.create(title = "Take me")
+Album4 = Album.objects.create(title = "Night Visions")
+
+Artist1 = Artist.objects.create(nick = "Imagine Dragons")
+Artist2 = Artist.objects.create(nick = "Hozier")
+Artist3 = Artist.objects.create(nick = "Bohnes")
+Artist4 = Artist.objects.create(nick = "Arctic Monkeys")
+
+Song1 = Song.objects.create(album = Album1,artist = Artist3, name= "Middle Finger",genre='POP')
+Song2 = Song.objects.create(album = Album2,artist = Artist4, name= "Do I Wanna Know?",genre='Rock')
+Song3 = Song.objects.create(album = Album3,artist = Artist2, name= "Take me to Church",genre='POP')
+Song4 = Song.objects.create(album = Album4,artist = Artist1, name= "Radioactice",genre='Hip-hop')
