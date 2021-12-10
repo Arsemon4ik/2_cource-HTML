@@ -1,0 +1,29 @@
+{% extends 'default.html' %}
+
+    {% block content %}
+    {% if clothes %}
+    <h2 style="margin: 0 auto;font-size: 30px;">Кол во товаров: {{ clothes|length }}</h2>
+        <table style="font-size: 40px;margin-top: 50px;">
+            <tr>
+                <td>Название</td>
+                <td>Название каталога</td>
+                <td>Описание</td>
+            </tr>
+            {% for cloth in clothes %}
+            <tr>
+                <td>
+                    {{ cloth.name }}
+                </td>
+                <td>
+                    {{ cloth.what_catalog }}
+                </td>
+                <td>
+                    {{ cloth.description }}
+                </td>
+            </tr>
+            {% endfor %}
+        </table>
+    {% else %}
+        <h4>Нет товара!</h4>
+    {% endif %}
+    {% endblock content %}

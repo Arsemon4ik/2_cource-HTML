@@ -1,0 +1,204 @@
+/* .icon{
+    border-radius: 50%;
+} */
+
+body {
+    background-color: indianred;
+    font: normal 14px 'Trebuchet MS', 'Helvetica CY', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    text-transform: none;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    list-style: none;
+    border-radius: 0;
+    color: #fff;
+    font-size: 20px;
+    line-height: 1;
+    font-weight: 400;
+    color: #000;
+}
+
+.header{
+    background-color: #D2092D;
+    width: 100%;
+}
+
+.header__logo img{
+    width: 90%;
+    margin: 8px 0 18px 18px;
+}
+
+.container{
+    width: 100%;
+}
+
+.header__inner{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.nav__link{
+    text-decoration: none;
+    margin: 20px;
+    text-decoration: #fff;
+
+}
+
+/* .small_menu ul li{
+    margin: 0;
+    float: left;
+
+}
+
+
+.small_menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 30px 0 10px 0;
+    font-size: 17px;
+}
+
+li {
+    text-align: -webkit-match-parent;
+} */
+
+
+
+
+.small_menu{
+    margin: 20px;
+}
+
+.small_menu td img {
+    margin: 0px 15px 13px 0;
+    margin-left: 57px;
+}
+
+
+
+.small_menu a{
+    margin: 0px 7px 0px 34px;
+    color:#fff;
+    text-align: center;
+
+}
+
+.nav__link:hover{
+    text-decoration: underline;
+}
+
+
+nav img{
+    width: 20%;
+    border-radius: 50%;
+}
+.phone {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.phone h3{
+    font-size: 30px;
+    color: #fff;
+    margin-left: 10px;
+    font-weight: 900;
+    width: 100%;
+}
+
+.infophone{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.container p {
+    margin: 10px;
+    color:#fff; /*Увеличенный футер*/
+
+}
+
+.menu{
+    padding-left: 15px;
+    margin: 0;
+    border-spacing: 0;
+}
+
+.menu button{
+    padding: 10px 30px;
+    border:0;
+    background-color: #D2092D;
+}
+.menu button a{
+    text-decoration: none;
+    font-family: inherit;
+    font-weight: 600;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+.menu button a:hover{
+    text-decoration: underline;
+}
+
+.search{
+    margin-left: 5px;
+
+}
+
+
+.text{
+    padding: 20px 0px 0px 12px;
+    border:0;
+    background-color: #ffff;
+    font-size: 21px;
+    width: 72%;
+    text-transform: uppercase;
+    color: #D2092D;
+    font-weight: 600;
+    text-align: left;
+}
+
+.lypa_img{
+    width: 11.5%;
+    padding: 0 0 0 0;
+}
+.but{
+    display: flex;
+
+}
+.korzina {
+    background: #fff url(img/bag.gif) left no-repeat;
+    background-color: #fff;
+
+}
+
+.korzina span{
+    cursor: pointer;
+    color: #D2092D;
+    text-align: center;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+.title img{
+    width: 100%;
+}

@@ -1,0 +1,6 @@
+from reima_app.models import Catalog, Clothes
+Catalog1 = Catalog.objects.create(name_catalog = "Jackets")
+Catalog2 = Catalog.objects.create(name_catalog = "Jampsuits")
+
+Clothes1 = Clothes.objects.create(name = "Куртка Reima 9990",what_catalog = 'J',description = 'Хорошая куртка', catalog=Catalog1)
+Clothes2 = Clothes.objects.create(name = "Комбинезон Reima 2220",what_catalog = 'JM',description = 'Хороший комбинезон', catalog=Catalog2)
