@@ -1,0 +1,120 @@
+/* .wrapper{
+  padding: 40px;
+} */
+body{ /* Селектор */
+  margin: 50px; /*CSS-свойство и значение */
+  font-size: 30px;
+  background-color: antiquewhite;
+  text-align: center;
+  font-family: Tahoma;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  align-content: space-between;
+  padding-left: 193px;
+}
+
+img{
+  width:100px;
+  height:100px;
+  border-radius: 10%;
+}
+
+.labs button a{
+  /*Чтобы ничего не слиплось*/
+  display:center;
+  padding:20px;
+  font-size: 20px;
+  text-decoration: none;
+
+}
+
+.labs button a:hover{
+  /*Чтобы ничего не слиплось*/
+  display:center;
+  padding:20px;
+  font-size: 20px;
+  text-decoration: underline;
+
+}
+
+
+.labs button{
+  padding:10px;
+  border-radius: 10px;
+}
+.labs{
+  text-align: center;
+}
+
+table a{
+  font-size: 30px;
+}
+
+table button{
+  border-radius: 10px;
+}
+
+.main-table table{
+  padding-top: 100px;
+  text-align: left;
+}
+.addition-table {
+  padding-left: 40px;
+}
+
+.container_2{
+  display: flex;
+  align-items: baseline;
+  text-align: left;
+}
+.container_2 button a {
+  text-decoration: none;
+}
+.container_2 button a:hover {
+  text-decoration: underline;
+}
+.under_container{
+  display: inline;
+  padding-left: 50px;
+}
+
+.opis-header{
+  text-align: center;
+}
+
+.opis-main{
+  margin-left: 50px;
+}
+
+.opis-main th{
+  text-align: center;
+}
+
+#container_ex {
+  display: flex;
+  text-align: left;
+  justify-content: flex-start;
+  align-items: baseline;
+}
+
+.plav_img{
+  float: left; /* Выравнивание рисунка по левому краю */
+  width: 59%;
+  height: 60%;
+  border-radius: 0;
+  margin: 0;
+
+}
+
+.opis-main_2 B + I {
+  color: red;
+}
+
+p, b {
+  font-family: fantasy;
+}
+
