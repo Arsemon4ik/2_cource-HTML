@@ -1,0 +1,68 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="{% static 'js/jquery.js' %}"></script>
+</head>
+<script>
+    $(document).ready(function(){
+            $('#animationDemo').animate({opacity: '1'} , 2000);
+    });
+
+</script>
+<style>
+    #animationDemo{
+        opacity: 0;
+    }
+</style>
+<div>
+    <div class="d-flex flex-row justify-content-center">
+        <div class="m-4 w-25">
+            <h2>Create Note</h2>
+            <form method="POST">
+                {% csrf_token %}
+                <!-- Name input -->
+                <div class="form-outline mb-4">
+                <label class="form-label" for="name">Name</label>
+                <input type="text" name= "name" class="form-control" />
+                </div>
+
+                <!-- Email input -->
+                <div class="form-outline mb-4">
+
+                <label class="form-label" for="date">Date/time</label>
+                <input type="datetime-local" name= "date"  id='date' class="form-control" />
+                </div>
+
+                <!-- Message input -->
+                <div class="form-outline mb-4">
+
+                <label class="form-label" for="text">Text</label>
+                <textarea class="form-control" name= "text" rows="4"></textarea>
+                </div>
+
+                <!-- Submit button -->
+                <button type="submit" class="btn btn-primary btn-block mb-4">Send</button>
+            </form>
+        </div>
+        <div class="p-2">
+            <h2>Your Notes</h2>
+            <div id="animationDemo">
+                {% for note in notes %}
+                    <hr>
+                    <h3>{{ note.name }}</h3>
+                    <h4>Date start: {{ note.date_start }}</h4>
+                    <h4>Date finish: {{ note.date_finish }}</h4>
+                    <h4>Text: {{ note.text }}</h4>
+                    <hr>
+                {% endfor %}
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
