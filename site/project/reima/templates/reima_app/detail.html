@@ -1,0 +1,21 @@
+{% extends 'default.html' %}
+
+
+{% block title %} {{ title }} {% endblock title %}
+
+{% block content %}
+
+<h2 style="font-size: 30px; text-align: center;">{{ cloth.name }}</h2>
+<ul style="text-align: center;">
+    <li style="font-size: 30px;" >
+        Описание: {{cloth.description}}
+    </li>
+    <li style="font-size: 30px">
+        Каталог: {{cloth.catalog.name_catalog}}
+    </li>
+    <li style="font-size: 30px">
+        Купить: <a style="color: aliceblue;"href="{% url 'zakaz' %}">Купить!</a>
+    </li>
+
+</ul>
+{% endblock content %}

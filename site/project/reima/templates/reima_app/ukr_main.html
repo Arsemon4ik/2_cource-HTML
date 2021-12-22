@@ -1,0 +1,154 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <link class="icon" rel="icon" href="{% static 'img/200x200.png' %}">
+    <title>Main page</title>
+
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <div class="header__logo">
+                    <a href="{% url 'main' %}">
+                        <img src="{% static 'img/reima.png' %}">
+                    </a>
+                </div>
+
+                <div class="small_menu">
+                    <table>
+                        <tr>
+                            <td>
+                                <img src="{% static 'img/callback.png' %}">
+                            </td>
+                            <td>
+                                <img src="{% static 'img/news.png' %}">
+                            </td>
+                            <td>
+                                <img src="{% static 'img/reima-video.png' %}">
+                            </td>
+                            <td>
+                                <img src="{% static 'img/contacts.png' %}">
+                            </td>
+                            <td>
+                                <img src="{% static 'img/reviews-reima.png' %}">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <a class="nav__link" href="#">Оплата/Доставка</a>
+                            </td>
+                            <td>
+                                <a class="nav__link" href="#">Новини</a>
+                            </td>
+                            <td>
+                                <a class="nav__link" href="#">Відео</a>
+                            </td>
+                            <td>
+                                <a class="nav__link" href="#">Контакти</a>
+                            </td>
+                            <td>
+                                <a class="nav__link" href="#">Відгуки</a>
+                            </td>
+                            <td>
+                                <a class="nav__link" href="{% url 'signup' %}">Авторизація</a>
+                            </td>
+                            <td>
+                                <a class="nav__link" href="{% url 'main' %}"><img src="{% static 'img/rus.png' %}" alt=""></a>
+                            </td>
+                            <td>
+                                <a class="nav__link" href="{% url 'us' %}"><img src="{% static 'img/us.png' %}" alt=""></a>
+                            </td>
+                            <td>
+                                <a class="nav__link" href="{% url 'ukr' %}"><img src="{% static 'img/ukr.png' %}" alt=""></a>
+                            </td>
+                        </tr>
+                    </table>
+                    <!-- <ul>
+                        <li>
+                            <a style="background: url(img/callback.png); background-repeat: no-repeat; " class="nav__link" href="#">Оплата/Доставка</a>
+                        </li>
+                        <li>
+                            <a style="background: url(img/news.png); background-repeat: no-repeat; " class="nav__link" href="#">Новости</a>
+                        </li>
+                        <li>
+                            <a style="background: url(img/reima-video.png); background-repeat: no-repeat; "class="nav__link" href="#">Видео</a>
+                        </li>
+                        <li>
+                            <a style="background: url(img/contacts.png); background-repeat: no-repeat; "class="nav__link" href="#">Контакты</a>
+                        </li>
+                        <li>
+                            <a style="background: url(img/reviews-reima.png); background-repeat: no-repeat; "class="nav__link"  href="#">Отзывы</a>
+                        </li>
+
+                    </ul> -->
+                </div>
+
+            </div>
+            <div class="infophone">
+                <nav>
+                    <nav class="phone">
+                        <img src="{% static 'img/phone.png' %}" alt="096-473-92-06">
+                        <h3>096 473 92 06</h3>
+                    </nav>
+
+                    <!-- <a class="nav__link_" href="#"><img src="img/bin.png"></a>
+                    <a class="nav__link_" href="#"><img src="img/search.png"></a> -->
+                </nav>
+                <p>Інтернет-магазин дитячого одягу</p>
+            </div>
+        </div>
+
+        <div class="buttons">
+            <div class="but">
+                <div class="menu">
+                    <table>
+                        <tr>
+                            <td>
+                                <button style="background-color: #D2092D;"><a style="color: #fff;" href="{% url 'main' %}">Головна</a></button>
+                            </td>
+                            <td>
+                                <button style="background-color: #fff;"><a style="color: #D2092D;" href="{% url 'catalog' %}">Каталог</a></button>
+                            </td>
+                            <td>
+                                <button style="background-color: #fff;"><a  style="color: #D2092D;" href="{% url 'main' %}">Демі</a></button>
+                            </td>
+                            <td>
+                                <button style="background-color: #fff;"><a style="color: #D2092D;"href="{% url 'main' %}">Інформація</a></button>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="search">
+                    <form method="POST" action="">
+                        <input class="text" type="text" placeholder="Поиск">
+                        <input class="lypa_img" type="image" src="{% static 'img/lypa.gif' %}">
+                    </form>
+                </div>
+            </div>
+            <div class="korzina" >
+                <a class="nav__link_" href="#"><img src="{% static 'img/bag.gif' %}"></a>
+                <span >
+                    0 товар(ів), на суму 0 грн.
+                </span>
+
+            </div>
+        </div>
+    </header>
+    {% block content %}
+    <div class="title">
+        <img src="{% static 'img/children.jpg' %}">
+
+
+    </div>
+    {% endblock content %}
+
+<!-- <script src="{% static 'js/scripts.js' %}"></script> -->
+</body>
+</html>

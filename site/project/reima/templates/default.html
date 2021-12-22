@@ -1,0 +1,397 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="{% static 'css/main.css' %}"> -->
+    <link class="icon" rel="icon" href="{% static 'img/200x200.png' %}">
+    <title>Main page</title>
+
+</head>
+<style>
+        /* .icon{
+    border-radius: 50%;
+} */
+
+body {
+    background-color: indianred;
+    font: normal 14px 'Trebuchet MS', 'Helvetica CY', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    text-transform: none;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    list-style: none;
+    border-radius: 0;
+    color: #fff;
+    font-size: 20px;
+    line-height: 1;
+    font-weight: 400;
+    color: #000;
+}
+
+.header{
+    background-color: #D2092D;
+    width: 100%;
+}
+
+.header__logo img{
+    width: 90%;
+    margin: 8px 0 18px 18px;
+}
+
+.container{
+    width: 100%;
+}
+
+.header__inner{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.nav__link{
+    text-decoration: none;
+    margin: 20px;
+    text-decoration: #fff;
+
+}
+
+/* .small_menu ul li{
+    margin: 0;
+    float: left;
+
+}
+
+
+.small_menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 30px 0 10px 0;
+    font-size: 17px;
+}
+
+li {
+    text-align: -webkit-match-parent;
+} */
+
+
+
+
+.small_menu{
+    margin: 20px;
+}
+
+.small_menu td img {
+    margin: 0px 15px 13px 0;
+    margin-left: 57px;
+}
+
+
+
+
+.small_menu a{
+    margin: 0px 7px 0px 34px;
+    color:#fff;
+    text-align: center;
+
+}
+
+
+.nav__link:hover{
+    text-decoration: underline;
+}
+
+
+nav img{
+    width: 20%;
+    border-radius: 50%;
+}
+.phone {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.phone h3{
+    font-size: 30px;
+    color: #fff;
+    margin-left: 10px;
+    font-weight: 900;
+    width: 100%;
+}
+
+.infophone{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.container p {
+    margin: 10px;
+    color:#fff; /*Увеличенный футер*/
+
+}
+
+.menu{
+    padding-left: 15px;
+    margin: 0;
+    border-spacing: 0;
+}
+
+.menu button{
+    padding: 10px 30px;
+    border:0;
+    background-color: #D2092D;
+}
+.menu button a{
+    text-decoration: none;
+    font-family: inherit;
+    font-weight: 600;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+.menu button a:hover{
+    text-decoration: underline;
+}
+
+.search{
+    margin-left: 5px;
+
+}
+
+
+.text{
+    padding: 20px 0px 0px 12px;
+    border:0;
+    background-color: #ffff;
+    font-size: 21px;
+    width: 72%;
+    text-transform: uppercase;
+    color: #D2092D;
+    font-weight: 600;
+    text-align: left;
+}
+
+.lypa_img{
+    width: 11.5%;
+    padding: 0 0 0 0;
+}
+.but{
+    display: flex;
+
+}
+.korzina {
+    background: #fff url(img/bag.gif) left no-repeat;
+    background-color: #fff;
+
+}
+
+.korzina span{
+    cursor: pointer;
+    color: #D2092D;
+    text-align: center;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+.title{
+    width: auto;
+}
+.imgslide{
+    width: 100%;
+    animation: fading 5s infinite;
+}
+
+@keyframes fading{
+    0% {opacity: 0;}
+    /* 25% {opacity: 0.5;} */
+    50% {opacity: 1;}
+    /* 75% {opacity: 0.5;} */
+    100% {opacity: 0;}
+
+}
+
+.after_title{
+    background-color:#fff ;
+
+}
+
+</style>
+<script src="{% static 'js/script.js' %}"></script>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <div class="header__logo">
+                    <a href="{% url 'main' %}">
+                        <img src="{% static 'img/reima.png' %}">
+                    </a>
+                </div>
+
+                <div class="small_menu">
+                    <table>
+                        <tr>
+                            <td>
+                                <img src="{% static 'img/callback.png' %}">
+                            </td>
+                            <td>
+                                <img src="{% static 'img/news.png' %}">
+                            </td>
+                            <td>
+                                <img src="{% static 'img/reima-video.png' %}">
+                            </td>
+                            <td>
+                                <img src="{% static 'img/contacts.png' %}">
+                            </td>
+                            <td>
+                                <img src="{% static 'img/reviews-reima.png' %}">
+                            </td>
+                            <!-- <td>
+                                <img id="big_photo" src="{% static 'img/face_2.png' %}">
+                            </td> -->
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <a class="nav__link" href="#">Оплата/Доставка</a>
+                            </td>
+                            <td>
+                                <a class="nav__link" href="#">Новости</a>
+                            </td>
+                            <td>
+                                <a class="nav__link" href="#">Видео</a>
+                            </td>
+                            <td>
+                                <a class="nav__link" href="#">Контакты</a>
+                            </td>
+                            <td>
+                                <a class="nav__link" href="#">Отзывы</a>
+                            </td>
+                            <td>
+                                <a class="nav__link" href="{% url 'signup' %}">Авторизация</a>
+                            </td>
+                            <td>
+                                <a class="nav__link" href="{% url 'main' %}"><img src="{% static 'img/rus.png' %}" alt=""></a>
+                            </td>
+                            <td>
+                                <a class="nav__link" href="{% url 'us' %}"><img src="{% static 'img/us.png' %}" alt=""></a>
+                            </td>
+                            <td>
+                                <a class="nav__link" href="{% url 'ukr' %}"><img src="{% static 'img/ukr.png' %}" alt=""></a>
+                            </td>
+                        </tr>
+                    </table>
+                    <!-- <ul>
+                        <li>
+                            <a style="background: url(img/callback.png); background-repeat: no-repeat; " class="nav__link" href="#">Оплата/Доставка</a>
+                        </li>
+                        <li>
+                            <a style="background: url(img/news.png); background-repeat: no-repeat; " class="nav__link" href="#">Новости</a>
+                        </li>
+                        <li>
+                            <a style="background: url(img/reima-video.png); background-repeat: no-repeat; "class="nav__link" href="#">Видео</a>
+                        </li>
+                        <li>
+                            <a style="background: url(img/contacts.png); background-repeat: no-repeat; "class="nav__link" href="#">Контакты</a>
+                        </li>
+                        <li>
+                            <a style="background: url(img/reviews-reima.png); background-repeat: no-repeat; "class="nav__link"  href="#">Отзывы</a>
+                        </li>
+
+                    </ul> -->
+                </div>
+
+            </div>
+            <div class="infophone">
+                <nav>
+                    <nav class="phone">
+                        <img src="{% static 'img/phone.png' %}" alt="096-473-92-06">
+                        <h3>096 473 92 06</h3>
+                    </nav>
+
+                    <!-- <a class="nav__link_" href="#"><img src="img/bin.png"></a>
+                    <a class="nav__link_" href="#"><img src="img/search.png"></a> -->
+                </nav>
+                <p>Интернет-магазин детской одежды</p>
+            </div>
+        </div>
+
+        <div class="buttons">
+            <div class="but">
+                <div class="menu">
+                    <table>
+                        <tr>
+                            <td>
+                                <button style="background-color: #D2092D;"><a style="color: #fff;" href="{% url 'main' %}">Главная</a></button>
+                            </td>
+                            <td>
+                                <button style="background-color: #fff;"><a style="color: #D2092D;" href="{% url 'catalog' %}">Каталог</a></button>
+                            </td>
+                            <td>
+                                <button style="background-color: #fff;"><a  style="color: #D2092D;" href="{% url 'main' %}">Деми</a></button>
+                            </td>
+                            <td>
+                                <button style="background-color: #fff;"><a style="color: #D2092D;"href="{% url 'main' %}">Информация</a></button>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="search">
+                    <form method="POST" action="">
+                        <input class="text" type="text" placeholder="Поиск">
+                        <input class="lypa_img" type="image" src="{% static 'img/lypa.gif' %}">
+                    </form>
+                </div>
+            </div>
+            <div class="korzina" >
+                <a class="nav__link_" href="#"><img src="{% static 'img/bag.gif' %}"></a>
+                <span >
+                    0 товар(ов), на суммму 0 грн.
+                </span>
+
+            </div>
+        </div>
+    </header>
+    {% block content %}
+    <div class="title">
+        <img src="{% static 'img/children.jpg' %}" class="imgslide">
+        <img src="{% static 'img/children_2.jpg' %}" class="imgslide">
+        <img src="{% static 'img/children_3.jpg' %}" class="imgslide">
+
+    </div>
+    <!-- <div class="after_title">
+        <h2 style="text-align: center; font-size: 30px;">ФИНСКАЯ ДЕТСКАЯ ОДЕЖДА REIMA (РЕЙМА)</h2>
+        <p>Более 72 лет бренд Рейма остаётся ведущим производителем детской зимней и демисезонной одежды, оставаясь новатором в дизайне и функциональности.
+
+            «Нашим вдохновением служат смена поры года, переменчивые и непростые погодные условия и разнообразные варианты игр наших деток».
+
+            Каждая мама желает, чтобы ее малыш ходил в качественной, красивой и хорошей одежде. Детская одежда от компании «Reima», представленная в нашем интернет-магазине, не только продается по приемлемой цене и обладает высоким качеством, но и даст вам возможность одеть ребенка стильно и привлекательно.
+        </p>
+    </div> -->
+
+    {% endblock content %}
+
+
+
+</body>
+</html>

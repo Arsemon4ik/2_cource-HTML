@@ -1,0 +1,33 @@
+{% extends "default.html" %}
+{% load static %}
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+{% block content %}
+
+{% if request.user.username %}
+<h1>Привет, {{request.user.username}}</h1>
+{% endif %}
+
+<br>
+<p class="lead text-muted">Укажите, пожалуйста, Вашу контактную информацию</p>
+<br>
+<hr>
+<br>
+<form method="POST">
+  {% csrf_token %}
+  <label for="email">Email</label>
+  <input name="email" type="email" value="{{ request.user.email }}">
+
+  <label for="email">Одежда</label>
+  <!-- Здесь будет список товаров.  -->
+  <select name="cloth" size="4">
+
+    {% for cloth in clothes %}
+      <option value="{{ cloth.id }}">
+          {{ cloth.name }}
+      </option>
+    {% endfor %}
+  </select>
+  <input type="submit" value="Купить">
+</form>
+
+{% endblock %}

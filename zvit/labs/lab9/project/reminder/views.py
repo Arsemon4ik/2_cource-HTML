@@ -3,6 +3,10 @@ from django.views.generic import ListView,CreateView, TemplateView
 from .models import Note
 from django.utils.timezone import now
 
+from django.http import HttpResponse
+from django.views import View
+from .tasks import complete_note
+
 # Create your views here.
 class NoteView(ListView):
     model = Note
@@ -22,4 +26,7 @@ class NoteView(ListView):
         note = Note(name = name, text=text, date_finish = date_finish)
         note.save()
 
-        return super().get(request, *args, **kwargs)
+        complete_note.apply_async([note.id], countdown = 5)
+        return redirect('/')
+
+
